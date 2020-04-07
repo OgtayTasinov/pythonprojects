@@ -19,10 +19,19 @@ pipeline {
         } // stage
         stage("Run conditionals.py") {
             steps {
-                 sh """
+                sh """
                      python conditionals.py
                 """
             } //steps
         }  // stage
-    } // stages   
+    } // stages 
+    post {
+        always {
+            sh """
+                rm-rf importantfile1
+                rm-rf importantfile2
+                rm-rf importantfile3
+            """
+        }
+    }  
 } //pipeline
