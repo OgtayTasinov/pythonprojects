@@ -20,7 +20,7 @@ pipeline {
         stage("Run conditionals.py") {
             steps {
                 sh """
-                     python conditionals.py
+                    python conditionals.py
                 """
             } //steps
         }  // stage
