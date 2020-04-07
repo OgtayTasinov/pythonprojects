@@ -17,10 +17,10 @@ pipeline {
                 """
             } //steps
         } // stage
-        stage("Run datastructures.py") {
+        stage("Run game.py") {
             steps {
                 sh """
-                    python datastructures.py
+                    python game.py
                 """
             } //steps
         }  // stage
