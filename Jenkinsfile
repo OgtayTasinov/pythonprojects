@@ -17,10 +17,10 @@ pipeline {
                 """
             } //steps
         } // stage
-        stage("Run conditionals.py") {
+        stage("Run datastructures.py") {
             steps {
                 sh """
-                    python conditionals.py
+                    python cdatastructures.py
                 """
             } //steps
         }  // stage
