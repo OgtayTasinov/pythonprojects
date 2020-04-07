@@ -20,7 +20,7 @@ pipeline {
         stage("Run datastructures.py") {
             steps {
                 sh """
-                    python cdatastructures.py
+                    python datastructures.py
                 """
             } //steps
         }  // stage
